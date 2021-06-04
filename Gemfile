@@ -28,7 +28,7 @@ group :development, :test do
 gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-group :development do
+group :development do   
 gem 'rspec-rails'
 gem 'rswag-specs'
 gem 'sqlite3', '~> 1.4'

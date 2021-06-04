@@ -1,8 +1,8 @@
 class Post < ApplicationRecord
     validates :title, presence: true
     validates :content, presence: true
-    #validates :image, presence: true
-    #belongs_to :user, class_name: 'User'
+    validates :image, presence: true
+    belongs_to :user,  class_name: 'User'
 
-    #has_one_attached :image
+    has_many_attached :images
 end
