@@ -4,5 +4,5 @@ class Post < ApplicationRecord
     validates :image, presence: true
     belongs_to :user,  class_name: 'User'
 
-    has_many_attached :images
+    has_one_attached :image
 end

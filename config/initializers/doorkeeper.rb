@@ -4,6 +4,12 @@ Doorkeeper.configure do
   # Change the ORM that doorkeeper will use (requires ORM extensions installed).
   # Check the list of supported ORMs here: https://github.com/doorkeeper-gem/doorkeeper#orms
   orm :active_record
+  grant_flows %w[password]
+
+  resource_owner_from_credentials do
+    User.find_by(email: params[:username])
+       &.authenticate(params[:password]) || nil
+  end
 
   # This block will be called to check whether the resource owner is authenticated or not.
   resource_owner_authenticator do
