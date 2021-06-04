@@ -1,0 +1,6 @@
+class ChangeUserPasswordType < ActiveRecord::Migration[6.0]
+  def change
+    change_column :users, :password, :string
+    rename_column :users, :password, :password_digest
+  end
+end
