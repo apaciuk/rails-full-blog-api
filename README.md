@@ -7,7 +7,7 @@ Rails 6.0.37
 Postgres (if using in dev) 
 # Configuration
 
-bundle install, the rake below to load db (sqlite for dev)
+bundle install, then rake cmd below to build/rebuild db (sqlite for dev)
 
 Dev: Sqlite3/Faker/Swagger,rswag
 
@@ -15,5 +15,5 @@ Prod: Postgres
 # Database creation
 rake db:reset
 
-(Create, load and seed db with one user/post and image upload)
+(Create, load and seed dev db with one user, dummy post and image upload)
 # Deployment instructions (Heroku)
