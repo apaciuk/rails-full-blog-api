@@ -1,5 +1,5 @@
 # rails-full-blog-api
-Full Rails api with posts, users, auth with Doorkeeper, image upload for user,
+Full Rails back end only api with posts, users, auth with Doorkeeper, image upload for user,
 # Ruby/Rails version
 Ruby 2.7.3
 Rails 6.0.37
