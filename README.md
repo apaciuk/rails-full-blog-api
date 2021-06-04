@@ -1,24 +1,19 @@
-# README
+# rails-full-blog-api
+Full Rails api with posts, users, auth with Doorkeeper, image upload for user,
+# Ruby/Rails version
+Ruby 2.7.3
+Rails 6.0.37
+# System dependencies
+Postgres (if using in dev) 
+# Configuration
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+bundle install, the rake below to load db (sqlite for dev)
 
-Things you may want to cover:
+Dev: Sqlite3/Faker/Swagger,rswag
 
-* Ruby version
+Prod: Postgres
+# Database creation
+rake db:reset
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+(Create, load and seed db with one user/post and image upload)
+# Deployment instructions (Heroku)
