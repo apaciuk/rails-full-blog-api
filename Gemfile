@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| "https://github.com/xhostcom{rails-full-blog-api}.git" }
 
 ruby '2.7.3'
 
