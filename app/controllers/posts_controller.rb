@@ -1,8 +1,6 @@
 class PostsController < ApplicationController
   before_action :doorkeeper_authorize!, except: [:index, :show]
   before_action :set_post, only: [:show, :update, :destroy]
-
-
   # GET /posts
   def index
     @posts = Post.all

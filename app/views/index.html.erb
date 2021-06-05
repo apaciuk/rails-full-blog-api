@@ -1,6 +1,0 @@
-<%= form_with model: @post, method: "post" do |f| %>
-    <%= f.text_field :title, placeholder: 'Enter article title here' %>
-    <%= f.file_field :image %>
-    <%= f.text_area :content, placeholder: "Enter article content here", size: "70x20" %>
-    <%= f.submit "Post" %>
-<% end %>
